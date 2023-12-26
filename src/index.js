@@ -21,3 +21,7 @@ connectDB()
     console.error(`ERROR  INITALISATION: ${error}`);
     throw error;
 });
+
+app.get("/",(req, res )=>{
+    res.send("hello world")
+})
