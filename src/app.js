@@ -7,7 +7,7 @@ const app = express();
 app.use(cors({
     origin: process.env.CORS_ORIGIN 
 }));
-
+express.u
 app.use(express.json({limit: "7kb"}));
 app.use(express.urlencoded({extended : true , limit: "7kb"}));
 app.use(express.static("public"));
